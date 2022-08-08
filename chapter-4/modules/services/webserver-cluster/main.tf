@@ -9,9 +9,9 @@
 # Similarly, for dynamodb: terraform import aws_dynamodb_table.terraform_locks tf-learning-bucket-locks
 # To unlock a lock terraform force-unlock -force "3c506440-0ad8-7594-a2ef-d1b88a05e2c3" --> this is the lockID
 
-provider "aws" {
-  region = "us-east-2"
-}
+# provider "aws" {
+#   region = "us-east-2"
+# }
 
 resource "aws_s3_bucket" "terraform_state" {
   bucket        = "aws-sher-learning-terraform"
